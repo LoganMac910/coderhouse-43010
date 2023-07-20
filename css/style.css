@@ -1,0 +1,528 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300&display=swap');
+@font-face {
+    font-family: 'LuloCleanOne';
+    src: url("../fonts/LuloCleanOne.ttf") format('truetype');
+}
+@font-face{
+    font-family:"Avenir-Heavy";
+    src: url("../fonts/Avenir-Heavy.ttf")
+}
+@font-face{
+    font-family:"Avenir-Light";
+    src: url("../fonts/Avenir-Light.ttf")
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');          /*Solo para el footer, en el proyecto final seguro me limite a solo 2 de estas fuentes*/
+
+
+/*Eliminar borde superior*/
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+/* Menu de navegacion */
+
+.navMenu{
+    position:fixed;
+    padding:0;
+    margin:0;
+    list-style: none;
+    box-sizing: border-box;
+    z-index:9999;                                       /*para que no haya solapado con contenido, mhmm...*/
+}
+
+body{
+    font-family: "Open Sans";
+}
+
+nav{
+    background: #24262b;
+    height: 80px;
+    width: 100%;
+    text-align:center;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    padding: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+    /*Color hover de navmenu y footer*/
+    a:hover{
+    background: #353535;
+    transition: .5s;
+    }
+
+/* Logo en .png en navmenu, en progreso
+
+    .logo{
+    float: left;
+    width: 190px;
+    height: auto;
+    padding: 15px 90px;
+}
+*/
+
+/*-------------------------*/
+/* Boton WhatsApp flotante */
+/*-------------------------*/
+
+#whatsapp .wtsapp{
+    position: fixed;
+    transform: all 0.2s ease;                   /* Le iba a colocar una animacion luego*/
+    background-color: #25d366;
+    display: block;
+    text-align:center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius:50px;
+    border-right: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+    bottom: 70px;
+    right: 50px;
+    border: 0;
+    z-index: 9999;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+}
+
+#whatsapp .wtsapp:hover{
+    font-size:40px;
+    width: 70px;
+    height:70px;
+}
+
+/*------*/
+/* HERO o primera seccion*/
+/* -----*/
+
+.hero{
+    background: url(../img/background1.jpg) no-repeat;
+    background-size:cover;
+    height:100vh;
+    background-attachment: fixed;                      /*parallax*/
+    background-position: top;
+    background-repeat: no-repeat;                       /* redundante? */           
+}
+
+/*Titulo "ATARAXIA STUDIOS*/
+
+.titulo{
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    text-align:center;
+    transform: translate(-50%, -50%);                 /*arregla centrado*/
+    font-size:5rem;                                    /* deberia equivaler a una medida en Px, hice el calculo */                 
+    font-weight:600;
+    text-transform: uppercase;
+    color:white;
+    border-bottom: 2px solid white;                /*barra separadora*/
+    padding-bottom: 2%;
+}
+
+/*Subtitulo "ESTUDIO DE GRABACION*/
+
+.subtitulo{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    text-align:center;
+    transform: translate(-50%, -50%);
+    font-weight:400;
+    font-size:2.5rem;
+    text-transform: uppercase;
+    color:white;
+    padding-top: 4%;
+}
+
+/*Boton "SOLICITAR COTIZACION"*/
+
+.SolicitarCotizacion{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-family:"LuloCleanOne";
+    font-weight:900;
+    font-size:13px;
+    height: 50px;
+    width: 265px;
+    background: indianred;
+    color: white;
+    border:none;
+    outline:none;
+    cursor:pointer;                                 /*para que aparezca manito al posarse encima*/
+    border-radius:16px;
+    margin-top:155px;
+    animation: fadeIn 4s;                           /*animacion fade-in al cargar la pagina por 4 segundos*/
+}
+
+/*Confi de animacion de boton*/
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.SolicitarCotizacion:hover{
+    transition: 0.6s;
+    height:55px;
+    width:270px;
+    font-size:14px;
+}
+
+/*----------*/
+/*SERVICIOS*/
+/*----------*/
+
+.servicios-section{                                 /*toda la seccion "Servicios"*/
+    height:100vh;
+    background-image: url(../img/servicios2.jpg);
+    background-attachment: fixed;                   /*parallax*/
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.servicios-titulo{
+    padding-top:40px;
+    color: #2A2A2A;
+    font-family:"Avenir-Heavy";
+    font-size:40px;
+    font-weight:600;
+    padding-bottom:20px;
+    text-align:center;
+}
+
+.margin-servicios{
+    padding-top: 50px;          /* solucion temporal a pagina de Servicios, que actualmente figura en Index como prueba de concepto */
+}
+
+/*linea separadora*/
+
+.servicios-separador_div {
+    height: 4px;
+    width: 2%;
+    background-color: #2A2A2A;
+    margin: 0 auto;
+    margin-bottom:40px;
+}
+
+.servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:0 auto;
+    min-width:40%;
+    max-width:40%;
+}
+
+/*cajitas servicios*/
+.servicios-box {
+    width: 250px;
+    height: 250px;
+    background-color: #f2f2f2e8;
+    border-radius: 5px;
+    margin: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.servicios-box img{
+    margin-top:20px;
+    width: 100px;
+    height: 100px;
+}
+
+.servicios-box h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.service-box p {
+    font-size: 15px;
+}
+
+/*------*/
+/*FOOTER*/
+/*------*/
+
+.contenedor{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.footer-titulos{
+    text-decoration: none;
+}
+.footer-ul{
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 0px;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size:18px;
+    color: #ffffff;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+    text-decoration:none;
+}
+
+.footer-col h4::before{
+    content: '';
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing:border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){                 /*solucion bizarra*/
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display:block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left:10px;
+}
+
+.footer-col .socials a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10x 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.7s ease; 
+}
+
+.footer-col .socials a:hover{                       /*efecto hover colores opuestos*/
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/*GALERIA*/
+/*-------*/
+
+.galeria-section{
+    background: rgb(255,233,243);
+    background: linear-gradient(180deg, rgba(255,233,243,1) 0%, rgba(201,215,248,1) 42%);           /* horrible, temporal */
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+.galeria-titulo{
+    padding-top:90px;
+    color: #2A2A2A;
+    font-family:"Avenir-Heavy";
+    font-size:40px;
+    font-weight:600;
+    padding-bottom:20px;
+    text-align:center;
+}
+
+/* galeria, primera fila */
+
+.galeria-row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* galeria, segunda fila */
+/* dividí en filas temporalmente */
+
+.galeria-row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.galeria-item {
+    margin: 10px;
+}
+
+.galeria-item img {
+    width: 400px;
+    height: 400px;
+}
+
+/*CONTACTO*/
+/*--------*/
+
+.contacto-titulo{
+    padding-top:90px;
+    color: #2A2A2A;
+    font-family:"Open Sans";
+    font-size:40px;
+    font-weight:600;
+    padding-bottom:20px;
+    text-align:center;
+}
+
+#contacto-section{
+    background: url(../img/contacto-background.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.contact-form{
+    font-family: "Open Sans";
+    width: 85%;
+    max-width: 600px;
+    background: #fcfcfcef;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #00000063;
+    font-family: "Open Sans"
+}
+
+.contact-form h1{
+    margin-top: 0;
+    padding-bottom: 20px;
+    font-weight: 500;
+    font-family: "Open Sans";
+    font-size:20px;
+    text-align: center;
+}
+
+.txtb{
+    border:1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-family: "Open Sans"
+}
+
+.txtb label{
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: "Open Sans"
+}
+
+.txtb input,.txtb textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+    font-family: "Open Sans"
+}
+
+.btn{
+    display: inline-block;
+    background: #d14b2a;
+    padding: 14px 0;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    font-family: "Open Sans"
+}
+
+/* DISCOGRAFIA */
+/* reproductor placeholder */
+
+.discografia-titulo{
+    padding-top:90px;
+    color: #f3f3f3;
+    font-family:"Open Sans";
+    font-size:40px;
+    font-weight:600;
+    padding-bottom:20px;
+    text-align:center;
+}
+
+.discografia-separador_div {
+    height: 4px;
+    width: 2%;
+    background-color: #f3f3f3;
+    margin: 0 auto;
+    margin-bottom:40px;
+}
+
+#discografia-section{
+    background: url(../img/discografia-background.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+/*responsive footer*/
+/*responsive de otros elementos pendiente*/
+
+@media(max-width:767px){
+    .footer-col{
+        width:50%;
+        margin-bottom: 30px;
+    }
+
+@media(max-width:574px){
+        .footer-col{
+            width:100%;
+            margin-bottom: 30px;
+        }
+}
+}
