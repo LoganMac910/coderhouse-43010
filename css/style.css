@@ -123,8 +123,8 @@ nav ul li a{
     top: 40%;
     left: 50%;
     text-align:center;
-    transform: translate(-50%, -50%);                 /*arregla centrado*/
-    font-size:5rem;                                    /* deberia equivaler a una medida en Px, hice el calculo */                 
+    transform: translate(-50%, -50%);
+    font-size:5rem;                
     font-weight:600;
     text-transform: uppercase;
     color:white;
@@ -222,7 +222,7 @@ nav ul li a{
     }
 }
 
-/*Confi de animacion de boton*/
+        /*Confi de animacion de boton*/
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -239,49 +239,41 @@ nav ul li a{
 /*SERVICIOS*/
 /*----------*/
 
-.servicios-section{                                 /*toda la seccion "Servicios"*/
-    height:100vh;
+.servicios-section {
+    height: 100vh;
     background-image: url(../img/servicios2.jpg);
-    background-attachment: fixed;                   /*parallax*/
+    background-attachment: fixed;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.servicios-titulo{
-    padding-top:40px;
+.servicios-titulo {
+    padding-top: 40px;
     color: #2A2A2A;
-    font-family:"Avenir-Heavy";
-    font-size:40px;
-    font-weight:600;
-    padding-bottom:20px;
-    text-align:center;
+    font-family: "Avenir-Heavy";
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center;
 }
-
-.margin-servicios{
-    padding-top: 50px;
-}
-
-/*linea separadora*/
 
 .servicios-separador_div {
     height: 4px;
     width: 2%;
     background-color: #2A2A2A;
     margin: 0 auto;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 .servicios-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin:0 auto;
-    min-width:40%;
-    max-width:40%;
+    margin: 0 auto;
+    max-width: 1000px;
 }
 
-/*cajitas servicios*/
 .servicios-box {
     width: 250px;
     height: 250px;
@@ -293,8 +285,8 @@ nav ul li a{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.servicios-box img{
-    margin-top:20px;
+.servicios-box img {
+    margin: 0 auto;
     width: 100px;
     height: 100px;
 }
@@ -306,71 +298,44 @@ nav ul li a{
     text-transform: uppercase;
 }
 
-.service-box p {
+.servicios-box p {
     font-size: 15px;
 }
 
-.servicios-section {
-    min-height: 100vh;
-    background-image: url(../img/servicios2.jpg);
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+/* Servicios responsive*/
 
-/* Responsive movil */
-@media screen and (max-width: 767px) {
-    .servicios-section {
-        background-position: center top;
-        height: 150%;
-    }
-
+@media (max-width: 767px) {
     .servicios-container {
-        min-width: 100%;
-        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
     }
-
     .servicios-box {
-        width: 100vw;
-        margin: 8px;
+        width: 90%;
     }
 }
 
-/* Responsive tablet */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .servicios-section {
-        background-position: center top;
-        height: 150%;
-    }
-
+@media (min-width: 768px) and (max-width: 1023px) {
     .servicios-container {
-        min-width: 80%;
-    }
-
-    .servicios-box {
-        width: 100vw;
-        margin: 8px;
+        justify-content: center;
+        width:400px;
     }
 }
 
-/* Responsive arriba de tablet  */
-@media screen and (max-width: 1500px) {
-    .servicios-section {
-        height:150%;
-        background-position: top;
-    }
-
+@media (min-width: 1024px) and (max-width: 1500px) {
     .servicios-container {
-        min-width: 50%;
-        max-width: 50%;
+        justify-content: center;
+        width:700px;
     }
+}
 
+@media (min-width: 1501px) {
+    .servicios-container {
+        justify-content:center;
+        width:40%;
+    }
     .servicios-box {
-        width: 100vw;
-        margin: 8px;
+        width: 40%;
     }
-
 }
 
 /*------*/
