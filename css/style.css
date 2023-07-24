@@ -97,6 +97,17 @@ nav ul li a{
     line-height: 65px;
 }
 
+@media (max-width: 767px) {
+    #whatsapp .wtsapp {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+        bottom: 50px;
+        right: 30px;
+    }
+}
+
 #whatsapp .wtsapp:hover{
     font-size:40px;
     width: 70px;
@@ -118,107 +129,135 @@ nav ul li a{
 
 /*Titulo "ATARAXIA STUDIOS*/
 
-.titulo{
-    position:absolute;
+.titulo {
+    position: absolute;
     top: 40%;
     left: 50%;
-    text-align:center;
+    text-align: center;
     transform: translate(-50%, -50%);
-    font-size:5rem;                
-    font-weight:600;
+    font-size: 5rem;
+    font-weight: 600;
     text-transform: uppercase;
-    color:white;
-    border-bottom: 2px solid white;                /*barra separadora*/
-    padding-bottom: 2%;
+    color: white;
 }
 
-/* Titulo, responsive para movil */
-@media screen and (max-width: 767px) {
-    .titulo {
-        font-size: 4rem;
-        padding-bottom: 1%;
-    }
+/* Subtitulo "ESTUDIO DE GRABACION" */
+.subtitulo {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
 }
 
-/* Titulo responsive para tablet */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .titulo {
-        font-size: 3.5rem;
-        padding-bottom: 1%;
-    }
+/* Separador */
+.titulo::after {
+    content: "";
+    display: block;
+    width: 250px;
+    height: 2px;
+    background-color: white;
+    margin: 10px auto;
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
 }
 
-/*Subtitulo "ESTUDIO DE GRABACION*/
-
-.subtitulo{
-    position:absolute;
+/* Button "Solicitar Cotizacion" */
+.SolicitarCotizacion {
+    position: absolute;
     top: 50%;
     left: 50%;
-    text-align:center;
     transform: translate(-50%, -50%);
-    font-weight:400;
-    font-size:2.5rem;
-    text-transform: uppercase;
-    color:white;
-    padding-top: 4%;
-}
-
-/* Subtitulo, responsive movil */
-@media screen and (max-width: 767px) {
-    .subtitulo {
-        font-size: 2rem;
-        padding-top: 2%;
-    }
-}
-
-/* Subtitulo, responsive tablet */
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .subtitulo {
-        font-size: 1.8rem;
-        padding-top: 1%;
-    }
-}
-
-
-/*Boton "SOLICITAR COTIZACION"*/
-
-.SolicitarCotizacion{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%);
-    font-family:"LuloCleanOne";
-    font-weight:900;
-    font-size:13px;
+    font-family: "LuloCleanOne";
+    font-weight: 900;
+    font-size: 13px;
     height: 50px;
     width: 265px;
     background: indianred;
     color: white;
-    border:none;
-    outline:none;
-    cursor:pointer;                                 /*para que aparezca manito al posarse encima*/
-    border-radius:16px;
-    margin-top:155px;
-    animation: fadeIn 4s;                           /*animacion fade-in al cargar la pagina por 4 segundos*/
+    border: none;
+    outline: none;
+    cursor: pointer;
+    /* para que aparezca manito al posarse encima */
+    border-radius: 16px;
+    margin-top: 155px;
+    animation: fadeIn 4s;
+    /* animacion fade-in al cargar la pagina por 4 segundos */
 }
 
-        /* Responsive boton movil */
-@media screen and (max-width: 767px) {
+/* titulo, subtitulo y boton responsive*/
+
+@media (max-width: 767px) {
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .titulo::after{
+        width: 100px;
+    }
+
+    .subtitulo {
+        font-size: 1.5rem;
+        white-space:nowrap;
+    }
     .SolicitarCotizacion {
-        font-size: 12px; /* Reduce font size for smaller screens */
-        height: 40px; /* Adjust the height as needed */
-        width: 220px; /* Adjust the width as needed */
-        margin-top: 100px; /* Adjust the top margin as needed */
+        font-size: 10px;
+        width: 200px;
+        height: 40px;
+        margin-top: 150px;
     }
 }
 
-        /* Responsive boton tablets */
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+    .titulo {
+        font-size: 4rem;
+        white-space:nowrap;
+    }
+    .subtitulo {
+        font-size: 2rem;
+    }
     .SolicitarCotizacion {
-        font-size: 11px; /* Further reduce font size for tablets */
-        height: 35px; /* Adjust the height as needed */
-        width: 200px; /* Adjust the width as needed */
-        margin-top: 75px; /* Adjust the top margin as needed */
+        font-size: 11px;
+        width: 230px;
+        height: 45px;
+        margin-top: 125px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+    .titulo {
+        font-size: 4.5rem;
+        white-space:nowrap;
+    }
+    .subtitulo {
+        font-size: 2.25rem;
+    }
+    .SolicitarCotizacion {
+        font-size: 12px;
+        width: 250px;
+        height: 50px;
+        margin-top: 140px;
+    }
+}
+
+@media (min-width: 1501px) {
+    .titulo {
+        font-size: 5rem;
+    }
+    .subtitulo {
+        font-size: 2.5rem;
+    }
+    .SolicitarCotizacion {
+        font-size: 13px;
+        width: 265px;
+        height: 50px;
+        margin-top: 155px;
     }
 }
 
@@ -305,26 +344,45 @@ nav ul li a{
 /* Servicios responsive*/
 
 @media (max-width: 767px) {
+
+    .servicios-section{
+        height: 100%;
+    }
+
     .servicios-container {
         flex-direction: column;
         align-items: center;
+        padding-bottom: 16px;
     }
+
     .servicios-box {
-        width: 90%;
+        width: 250px;
+        height: 250px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+
+    .servicios-section{
+        height: 100%;
+    }
+
     .servicios-container {
         justify-content: center;
         width:400px;
+        padding-bottom: 16px;
     }
 }
 
 @media (min-width: 1024px) and (max-width: 1500px) {
+
+    .servicios-section{
+        height: 100%;
+    }
     .servicios-container {
         justify-content: center;
         width:700px;
+        padding-bottom: 16px;
     }
 }
 
@@ -335,6 +393,10 @@ nav ul li a{
     }
     .servicios-box {
         width: 40%;
+    }
+
+    .servicios-section{
+        height: 110vh;
     }
 }
 
