@@ -29,7 +29,7 @@
     margin:0;
     list-style: none;
     box-sizing: border-box;
-    z-index:9999;                                       /*para que no haya solapado con contenido, mhmm...*/
+    z-index:9999;
 }
 
 body{
@@ -78,7 +78,7 @@ nav ul li a{
 
 #whatsapp .wtsapp{
     position: fixed;
-    transform: all 0.2s ease;                   /* Le iba a colocar una animacion luego*/
+    transform: all 0.2s ease;
     background-color: #25d366;
     display: block;
     text-align:center;
@@ -132,6 +132,12 @@ nav ul li a{
     padding-bottom: 2%;
 }
 
+@media(max-width:1483px){
+    .titulo{
+        font-size:4rem;
+        padding-bottom: 4%;}
+    }
+
 /*Subtitulo "ESTUDIO DE GRABACION*/
 
 .subtitulo{
@@ -146,6 +152,11 @@ nav ul li a{
     color:white;
     padding-top: 4%;
 }
+
+@media(max-width:1483px){
+    .subtitulo{
+        font-size:2rem;}
+    }
 
 /*Boton "SOLICITAR COTIZACION"*/
 
@@ -206,7 +217,7 @@ nav ul li a{
 }
 
 .margin-servicios{
-    padding-top: 50px;          /* solucion temporal a pagina de Servicios, que actualmente figura en Index como prueba de concepto */
+    padding-top: 50px;
 }
 
 /*linea separadora*/
@@ -255,6 +266,47 @@ nav ul li a{
 
 .service-box p {
     font-size: 15px;
+}
+
+@media screen and (max-width: 1483px) {
+    .servicios-container {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .servicios-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .servicios-container {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .servicios-container {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .servicios-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .servicios-box img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .servicios-box h2 {
+        font-size: 14px;
+    }
+
+    .service-box p {
+        font-size: 13px;
+    }
 }
 
 /*------*/
