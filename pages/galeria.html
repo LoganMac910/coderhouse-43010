@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  <!--linkeo estilo a Font Awesome para el Footer, disculpen si no va aún-->
@@ -11,46 +13,94 @@
 </head>
 <body>
     <header>
-        <nav class="navMenu">
-            <!--Menu de navegacion-->
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/servicios.html">Servicios</a></li>
-                <li><a href="../pages/discografia.html">Discografía</a></li>
-                <li><a href="../pages/galeria.html">Galería</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+        <!--navbar Boostrap-->
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+            <div class="container">
+                <a
+                    href="../index.html"
+                    class="navbar-brand mb-0 h1">
+                    <img
+                    class="d-line-block align-center" 
+                    src="../img/ataraxiastudios-logo-circular.png"
+                    width="50" height="50" />
+                    <span class=TituloLogo>Ataraxia Studios</span>
+                </a>
+                <button
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    class="navbar-toggler"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse text-end"
+                    id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="../index.html" class="nav-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="../pages/servicios.html" class="nav-link">
+                                Servicios
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="../pages/discografia.html" class="nav-link">
+                                Discografia
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="../pages/galeria.html" class="nav-link">
+                                Galería
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a href="../pages/contacto.html" class="nav-link">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     
     <main>
-        <section class="galeria-section">
-            <h2 class="galeria-titulo">Galería</h2>
-                <tr class="servicios-separador" >
-                    <td colspan="3"><div class="servicios-separador_div"></div></td>
-                </tr>
-            <div class="galeria-row1">
-                <div class="galeria-item">
-                    <img src="../img/galeria1.jpeg" alt="Image 1">
-                </div>
-                <div class="galeria-item">
-                    <img src="../img/galeria2.jpg" alt="Image 2">
-                </div>
-                <div class="galeria-item">
-                    <img src="../img/galeria3.jpg" alt="Image 3">
-                </div>
-            <div class="galeria-row2">
-                <div class="galeria-item">
-                    <img src="../img/galeria4.jpg" alt="Image 4">
-                </div>
-                <div class="galeria-item">
-                    <img src="../img/galeria5.jpg" alt="Image 5">
-                </div>
-                <div class="galeria-item">
-                    <img src="../img/galeria6.jpg" alt="Image 6">
+        <section class="gallery min-vh-100">
+                <h2 class="galeria-titulo">Galería</h2>
+                    <tr class="servicios-separador" >
+                        <td colspan="3"><div class="servicios-separador_div"></div></td>
+                    </tr>
+            <div class="container-lg">
+                <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                    <div class="col">
+                        <img src="../img/galeria1.jpeg" class="gallery-item" alt="gallery">
+                    </div>
+                    <div class="col">
+                        <img src="../img/galeria2.jpg" class="gallery-item" alt="gallery">
+                    </div>
+                    <div class="col">
+                        <img src="../img/galeria3.jpg" class="gallery-item" alt="gallery">
+                    </div>
+                    <div class="col">
+                        <img src="../img/galeria4.jpg" class="gallery-item" alt="gallery">
+                    </div>
+                    <div class="col">
+                        <img src="../img/galeria5.jpg" class="gallery-item" alt="gallery">
+                    </div>
+                    <div class="col">
+                        <img src="../img/galeria6.jpg" class="gallery-item" alt="gallery">
+                    </div>
                 </div>
             </div>
         </section>
+
     </main>
     <!---los links aún no tienen nada-->
     <footer class="footer">
@@ -86,5 +136,7 @@
             </div>
         </div>
     </footer>
+    <!--Boostrap Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

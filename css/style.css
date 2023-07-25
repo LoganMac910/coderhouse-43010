@@ -24,16 +24,13 @@
 /* Menu de navegacion */
 
 .TituloLogo{
-    margin: 20px;
+    margin: 30px;
     font-family: "Open Sans";    
-}
-
-.navbar-nav{
-    align-items:center;
 }
 
 .navbar{
     font-family: "Open Sans";
+    margin-right: 10px;
 }
 
 /*-------------------------*/
@@ -147,12 +144,10 @@
     color: white;
     border: none;
     outline: none;
-    cursor: pointer;
-    /* para que aparezca manito al posarse encima */
+    cursor: pointer;    /* para que aparezca manito al posarse encima */
     border-radius: 16px;
     margin-top: 155px;
-    animation: fadeIn 4s;
-    /* animacion fade-in al cargar la pagina por 4 segundos */
+    animation: fadeIn 4s;   /* animacion fade-in al cargar la pagina por 4 segundos */
 }
 
 /* titulo, subtitulo y boton responsive*/
@@ -252,7 +247,7 @@
 }
 
 .servicios-titulo {
-    padding-top: 40px;
+    padding-top: 100px;
     color: #2A2A2A;
     font-family: "Avenir-Heavy";
     font-size: 40px;
@@ -458,17 +453,8 @@
 /*GALERIA*/
 /*-------*/
 
-.galeria-section{
-    background: rgb(255,233,243);
-    background: linear-gradient(180deg, rgba(255,233,243,1) 0%, rgba(201,215,248,1) 42%);           /* horrible, temporal */
-    background-position: top;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
-}
-
 .galeria-titulo{
-    padding-top:90px;
+    padding-top:100px;
     color: #2A2A2A;
     font-family:"Avenir-Heavy";
     font-size:40px;
@@ -477,38 +463,28 @@
     text-align:center;
 }
 
-/* galeria, primera fila */
-
-.galeria-row1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100vh;
+img{
+	max-width: 100%;
+}
+.gallery{
+	background-color: #dbddf1;
+}
+.gallery img{
+	background-color: #ffffff;
+	width: 100%;
+	cursor: pointer;
+    transition: 0.3s
 }
 
-/* galeria, segunda fila */
-/* dividí en filas temporalmente */
-
-.galeria-row2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.galeria-item {
-    margin: 10px;
-}
-
-.galeria-item img {
-    width: 400px;
-    height: 400px;
+.gallery img:hover{
+    transform: scale(1.1);
 }
 
 /*CONTACTO*/
 /*--------*/
 
 .contacto-titulo{
-    padding-top:90px;
+    padding-top:100px;
     color: #2A2A2A;
     font-family:"Open Sans";
     font-size:40px;
@@ -530,7 +506,7 @@
     max-width: 600px;
     background: #fcfcfcef;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%,-50%);
     padding: 30px 40px;
@@ -589,11 +565,18 @@
     font-family: "Open Sans"
 }
 
+@media (min-width: 368px) and (max-width: 1023px) {
+
+    .contact-form{
+        margin-top:25px;
+    }
+}
+
 /* DISCOGRAFIA */
 /* reproductor placeholder */
 
 .discografia-titulo{
-    padding-top:90px;
+    padding-top:100px;
     color: #f3f3f3;
     font-family:"Open Sans";
     font-size:40px;
