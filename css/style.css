@@ -23,54 +23,18 @@
 
 /* Menu de navegacion */
 
-.navMenu{
-    position:fixed;
-    padding:0;
-    margin:0;
-    list-style: none;
-    box-sizing: border-box;
-    z-index:9999;
+.TituloLogo{
+    margin: 20px;
+    font-family: "Open Sans";    
 }
 
-body{
+.navbar-nav{
+    align-items:center;
+}
+
+.navbar{
     font-family: "Open Sans";
 }
-
-nav{
-    background: #24262b;
-    height: 80px;
-    width: 100%;
-    text-align:center;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-}
-
-nav ul li a{
-    color: white;
-    font-size: 16px;
-    padding: 13px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-    /*Color hover de navmenu y footer*/
-    a:hover{
-    background: #353535;
-    transition: .5s;
-    }
-
-/* Logo en .png en navmenu, en progreso
-
-    .logo{
-    float: left;
-    width: 190px;
-    height: auto;
-    padding: 15px 90px;
-}
-*/
 
 /*-------------------------*/
 /* Boton WhatsApp flotante */
