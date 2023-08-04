@@ -1,0 +1,298 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: 'LuloCleanOne';
+  src: url("../fonts/LuloCleanOne.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url("../fonts/Avenir-Heavy.ttf"); }
+
+@font-face {
+  font-family: "Avenir-Light";
+  src: url("../fonts/Avenir-Light.ttf"); }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.TituloLogo {
+  margin: 30px;
+  font-family: "Open Sans"; }
+
+.navbar {
+  font-family: "Open Sans";
+  margin-right: 10px; }
+
+#whatsapp .wtsapp {
+  position: fixed;
+  transform: all 0.2s ease;
+  background-color: #25d366;
+  display: block;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 50px;
+  border-right: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 35px;
+  bottom: 70px;
+  right: 50px;
+  border: 0;
+  z-index: 9999;
+  width: 65px;
+  height: 65px;
+  line-height: 65px; }
+
+main section .hero {
+  background: url(../img/background1.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat; }
+  main section .hero .titulo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    animation: fadeInRight 2s; }
+    main section .hero .titulo::after {
+      content: "";
+      display: block;
+      width: 250px;
+      height: 2px;
+      background-color: white;
+      margin: 10px auto;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      right: 0; }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate(-25%, -50%); }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); } }
+
+main section .subtitulo {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0;
+  animation: fadeIn 3s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+main section .SolicitarCotizacion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "LuloCleanOne";
+  font-weight: 900;
+  font-size: 13px;
+  height: 50px;
+  width: 265px;
+  background: indianred;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 16px;
+  margin-top: 155px;
+  opacity: 0;
+  animation: fadeIn 4s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+  main section .SolicitarCotizacion:hover {
+    transition: all 0.8s ease;
+    transform: translate(-50%, -50%) scale(1.1); }
+
+.servicios-section {
+  height: 100vh;
+  background-image: url(../img/servicios2.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .servicios-section .servicios-titulo {
+    padding-top: 100px;
+    color: #2A2A2A;
+    font-family: "Avenir-Heavy";
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center; }
+  .servicios-section .servicios-separador {
+    text-align: center;
+    margin-bottom: 40px; }
+    .servicios-section .servicios-separador .servicios-separador_div {
+      height: 4px;
+      width: 2%;
+      background-color: #2A2A2A;
+      margin: 0 auto; }
+  .servicios-section .servicios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px; }
+    .servicios-section .servicios-container .servicios-box {
+      width: 250px;
+      height: 250px;
+      background-color: #f2f2f2e8;
+      border-radius: 5px;
+      margin: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+      .servicios-section .servicios-container .servicios-box img {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px; }
+      .servicios-section .servicios-container .servicios-box .servicios-box-titulos p {
+        font-size: 15px; }
+      .servicios-section .servicios-container .servicios-box h2 {
+        font-size: 16px;
+        margin-bottom: 12px;
+        margin-top: 10px;
+        text-transform: uppercase; }
+      .servicios-section .servicios-container .servicios-box p {
+        font-size: 15px; }
+
+@media (max-width: 767px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 16px; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px;
+        height: 250px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 400px;
+      padding-bottom: 16px; } }
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 700px;
+      padding-bottom: 16px; } }
+
+@media (min-width: 1501px) {
+  .servicios-container {
+    justify-content: center;
+    width: 40%; }
+    .servicios-container .servicios-box {
+      width: 40%; }
+    .servicios-container .servicios-section {
+      height: 100%; } }
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px; } }
+
+@media (max-width: 767px) and (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px; } }
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0px;
+  line-height: 1.5;
+  font-family: 'Poppins', sans-serif; }
+  .footer .contenedor {
+    max-width: 1170px;
+    margin: auto; }
+    .footer .contenedor .row {
+      display: flex;
+      flex-wrap: wrap; }
+      .footer .contenedor .row .footer-col {
+        width: 25%;
+        padding: 0 15px; }
+        .footer .contenedor .row .footer-col h4 {
+          font-size: 18px;
+          color: #ffffff;
+          margin-bottom: 35px;
+          font-weight: 500;
+          position: relative;
+          text-decoration: none; }
+          .footer .contenedor .row .footer-col h4::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: #e91e63;
+            height: 2px;
+            box-sizing: border-box;
+            width: 50px; }
+        .footer .contenedor .row .footer-col .footer-ul {
+          list-style: none;
+          text-decoration: none; }
+          .footer .contenedor .row .footer-col .footer-ul li:not(:last-child) {
+            margin-bottom: 10px; }
+          .footer .contenedor .row .footer-col .footer-ul li a {
+            font-size: 16px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 300;
+            color: #bbbbbb;
+            display: block;
+            transition: all 0.3s ease;
+            padding: 0 0 -16px;
+            margin: 0 0 0 -32px;
+            /*nunca supe de donde sale este margin*/ }
+            .footer .contenedor .row .footer-col .footer-ul li a:hover {
+              color: #ffffff;
+              padding-left: 10px;
+              background-color: rgba(255, 255, 255, 0.1); }
+        .footer .contenedor .row .footer-col .socials a {
+          display: inline-block;
+          height: 40px;
+          width: 40px;
+          background-color: rgba(255, 255, 255, 0.2);
+          margin: 0 10px 10x 0;
+          text-align: center;
+          line-height: 40px;
+          border-radius: 50%;
+          color: #ffffff;
+          transition: all 0.7s ease; }
+          .footer .contenedor .row .footer-col .socials a:hover {
+            color: #24262b;
+            background-color: #ffffff; }

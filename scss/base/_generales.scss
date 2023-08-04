@@ -1,0 +1,58 @@
+// FUENTES
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;0,800;1,300&display=swap');
+@font-face {
+    font-family: 'LuloCleanOne';
+    src: url("../fonts/LuloCleanOne.ttf") format('truetype');
+}
+@font-face{
+    font-family:"Avenir-Heavy";
+    src: url("../fonts/Avenir-Heavy.ttf")
+}
+@font-face{
+    font-family:"Avenir-Light";
+    src: url("../fonts/Avenir-Light.ttf")
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+// RESET
+
+* {
+    margin: 0px;
+    padding:0px;
+}
+
+// NAVBAR MODIFACION DE BOOTSTRAP
+
+.TituloLogo{
+    margin: 30px;
+    font-family: "Open Sans";    
+}
+
+.navbar{
+    font-family: "Open Sans";
+    margin-right: 10px;
+}
+
+//BOTON WHATSAPP
+
+#whatsapp .wtsapp{
+    position: fixed;
+    transform: all 0.2s ease;
+    background-color: #25d366;
+    display: block;
+    text-align:center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius:50px;
+    border-right: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px;
+    bottom: 70px;
+    right: 50px;
+    border: 0;
+    z-index: 9999;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+}

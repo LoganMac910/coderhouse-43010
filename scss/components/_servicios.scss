@@ -1,0 +1,71 @@
+.servicios-section {
+    height: 100vh;
+    background-image: url(../img/servicios2.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .servicios-titulo {
+        padding-top: 100px;
+        color: #2A2A2A;
+        font-family: "Avenir-Heavy";
+        font-size: 40px;
+        font-weight: 600;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .servicios-separador {
+        text-align:center;
+        margin-bottom: 40px;
+        .servicios-separador_div {
+            height: 4px;
+            width: 2%;
+            background-color: #2A2A2A;
+            margin: 0 auto;
+        }
+    }
+
+    .servicios-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 1000px;
+
+        .servicios-box {
+            width: 250px;
+            height: 250px;
+            background-color: #f2f2f2e8;
+            border-radius: 5px;
+            margin: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+            img {
+                margin: 0 auto;
+                width: 100px;
+                height: 100px;
+            }
+
+            .servicios-box-titulos {
+                p {
+                    font-size: 15px;
+                }
+            }
+
+            h2 {
+                font-size: 16px;
+                margin-bottom: 12px;
+                margin-top: 10px;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+    }
+}
