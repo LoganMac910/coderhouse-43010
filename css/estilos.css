@@ -214,13 +214,32 @@ main section .SolicitarCotizacion {
       padding-bottom: 16px; } }
 
 @media (min-width: 1501px) {
-  .servicios-container {
-    justify-content: center;
-    width: 40%; }
-    .servicios-container .servicios-box {
+  .servicios-section {
+    height: 100vh; }
+    .servicios-section .servicios-container {
+      justify-content: center;
       width: 40%; }
-    .servicios-container .servicios-section {
-      height: 100%; } }
+      .servicios-section .servicios-container .servicios-box {
+        width: 40%; } }
+
+@media (min-width: 1501px) and (max-width: 1863px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 40%;
+      padding-bottom: 16px; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px; } }
+
+@media (min-width: 1864px) {
+  .servicios-section {
+    height: 100vh; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 40%; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px; } }
 
 @media (max-width: 767px) {
   .footer-col {
