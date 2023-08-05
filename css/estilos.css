@@ -241,6 +241,12 @@ main section .SolicitarCotizacion {
       .servicios-section .servicios-container .servicios-box {
         width: 250px; } }
 
+@media (min-width: 350px) and (max-width: 1500px) {
+  #discografia-section {
+    height: 160vh; }
+    #discografia-section iframe {
+      width: 90%; } }
+
 @media (max-width: 767px) {
   .footer-col {
     width: 50%;
@@ -250,6 +256,204 @@ main section .SolicitarCotizacion {
   .footer-col {
     width: 100%;
     margin-bottom: 30px; } }
+
+#discografia-section {
+  background: url(../img/discografia-background.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed; }
+  #discografia-section .discografia-titulo {
+    padding-top: 100px;
+    color: #f3f3f3;
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center; }
+  #discografia-section .servicios-separador {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; }
+    #discografia-section .servicios-separador .servicios-separador_div {
+      height: 4px;
+      width: 2%;
+      background-color: #f3f3f3;
+      margin: auto; }
+  #discografia-section iframe {
+    margin: auto;
+    display: block;
+    margin-bottom: 20px; }
+
+@media (max-width: 767px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 16px; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px;
+        height: 250px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 400px;
+      padding-bottom: 16px; } }
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 700px;
+      padding-bottom: 16px; } }
+
+@media (min-width: 1501px) {
+  .servicios-section {
+    height: 100vh; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 40%; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 40%; } }
+
+@media (min-width: 1501px) and (max-width: 1863px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 40%;
+      padding-bottom: 16px; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px; } }
+
+@media (min-width: 1864px) {
+  .servicios-section {
+    height: 100vh; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 40%; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px; } }
+
+@media (min-width: 350px) and (max-width: 1500px) {
+  #discografia-section {
+    height: 160vh; }
+    #discografia-section iframe {
+      width: 90%; } }
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px; } }
+
+@media (max-width: 767px) and (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px; } }
+
+.gallery {
+  background-color: #dbddf1;
+  padding-bottom: 50px; }
+  .gallery .galeria-titulo {
+    padding-top: 100px;
+    color: #2a2a2a;
+    font-family: "Avenir-Heavy";
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center; }
+  .gallery .servicios-separador {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; }
+    .gallery .servicios-separador .servicios-separador_div {
+      height: 4px;
+      width: 2%;
+      background-color: #2A2A2A;
+      margin: auto; }
+  .gallery .container-lg .row .col img {
+    max-width: 100%;
+    background-color: #ffffff;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s; }
+    .gallery .container-lg .row .col img:hover {
+      transform: scale(1.1); }
+
+#contacto-section {
+  background: url(../img/contacto-background.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed; }
+  #contacto-section .contacto-titulo {
+    padding-top: 100px;
+    color: #2A2A2A;
+    font-family: "Open Sans";
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center; }
+  #contacto-section .servicios-separador {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; }
+    #contacto-section .servicios-separador .servicios-separador_div {
+      height: 4px;
+      width: 2%;
+      background-color: #f3f3f3;
+      margin: auto; }
+  #contacto-section .contact-form {
+    font-family: "Open Sans";
+    width: 85%;
+    max-width: 600px;
+    background: #fcfcfcef;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px #00000063; }
+    #contacto-section .contact-form h1 {
+      margin-top: 0;
+      padding-bottom: 20px;
+      font-weight: 500;
+      font-size: 20px;
+      text-align: center; }
+    #contacto-section .contact-form .txtb {
+      border: 1px solid gray;
+      margin: 8px 0;
+      padding: 12px 18px;
+      border-radius: 10px; }
+      #contacto-section .contact-form .txtb label {
+        display: block;
+        text-align: left;
+        color: #333;
+        text-transform: uppercase;
+        font-size: 14px; }
+      #contacto-section .contact-form .txtb input,
+      #contacto-section .contact-form .txtb textarea {
+        width: 100%;
+        border: none;
+        background: none;
+        outline: none;
+        font-size: 18px;
+        margin-top: 6px; }
+    #contacto-section .contact-form .btn {
+      display: inline-block;
+      background: #d14b2a;
+      padding: 14px 0;
+      color: white;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 8px;
+      width: 100%; }
 
 .footer {
   background-color: #24262b;

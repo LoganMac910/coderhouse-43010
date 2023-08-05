@@ -93,6 +93,18 @@
             }
 }
 
+//DISCOGRAFIA RESPONSIVE
+
+@media (min-width: 350px) and (max-width: 1500px){
+    #discografia-section{
+        height: 160vh;
+
+        iframe{
+            width: 90%;
+        }
+    }
+}
+
 //FOOTER RESPONSIVE
 
 @media(max-width:767px){

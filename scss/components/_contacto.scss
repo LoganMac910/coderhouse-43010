@@ -1,0 +1,89 @@
+#contacto-section {
+    background: url(../img/contacto-background.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+
+    .contacto-titulo {
+        padding-top: 100px;
+        color: #2A2A2A;
+        font-family: "Open Sans";
+        font-size: 40px;
+        font-weight: 600;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .servicios-separador {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        .servicios-separador_div {
+            height: 4px;
+            width: 2%;
+            background-color: #f3f3f3;
+            margin: auto;
+        }
+    }
+
+    .contact-form {
+        font-family: "Open Sans";
+        width: 85%;
+        max-width: 600px;
+        background: #fcfcfcef;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px 40px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 20px #00000063;
+
+        h1 {
+            margin-top: 0;
+            padding-bottom: 20px;
+            font-weight: 500;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .txtb {
+            border: 1px solid gray;
+            margin: 8px 0;
+            padding: 12px 18px;
+            border-radius: 10px;
+
+            label {
+                display: block;
+                text-align: left;
+                color: #333;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                border: none;
+                background: none;
+                outline: none;
+                font-size: 18px;
+                margin-top: 6px;
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d14b2a;
+            padding: 14px 0;
+            color: white;
+            text-transform: uppercase;
+            cursor: pointer;
+            margin-top: 8px;
+            width: 100%;
+        }
+    }
+}

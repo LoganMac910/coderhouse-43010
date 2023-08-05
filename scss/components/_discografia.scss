@@ -1,0 +1,35 @@
+#discografia-section {
+    background: url(../img/discografia-background.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+
+    .discografia-titulo {
+        padding-top: 100px;
+        color: #f3f3f3;
+        font-family: "Open Sans";
+        font-size: 40px;
+        font-weight: 600;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    .servicios-separador {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        .servicios-separador_div {
+            height: 4px;
+            width: 2%;
+            background-color: #f3f3f3;
+            margin: auto;
+        }
+    }
+
+    iframe{
+        margin:auto;
+        display:block;
+        margin-bottom: 20px;
+    }
+}
