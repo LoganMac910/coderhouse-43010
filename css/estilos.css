@@ -21,12 +21,10 @@
   font-family: "Open Sans"; }
 
 .navbar {
-  font-family: "Open Sans";
-  margin-right: 10px; }
+  font-family: "Open Sans"; }
 
 #whatsapp .wtsapp {
   position: fixed;
-  transform: all 0.2s ease;
   background-color: #25d366;
   display: block;
   text-align: center;
@@ -35,14 +33,17 @@
   border-right: none;
   color: #fff;
   font-weight: 700;
-  font-size: 35px;
+  font-size: 40px;
   bottom: 70px;
   right: 50px;
   border: 0;
   z-index: 9999;
   width: 65px;
   height: 65px;
-  line-height: 65px; }
+  line-height: 65px;
+  transition: transform 0.3s ease; }
+  #whatsapp .wtsapp:hover {
+    transform: scale(1.2); }
 
 main section .hero {
   background: url(../img/background1.jpg) no-repeat;
@@ -68,7 +69,7 @@ main section .hero {
       width: 250px;
       height: 2px;
       background-color: white;
-      margin: 10px auto;
+      margin: 25px auto;
       position: absolute;
       top: calc(100% + 8px);
       left: 0;
@@ -134,6 +135,138 @@ main section .SolicitarCotizacion {
     transition: all 0.8s ease;
     transform: translate(-50%, -50%) scale(1.1); }
 
+@media (max-width: 767px) {
+  main section .hero .titulo {
+    font-size: 3.2rem; }
+    main section .hero .titulo::after {
+      width: 100px;
+      margin: 25px auto; }
+  main section .hero .subtitulo {
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding-top: 95px; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 10px;
+    width: 200px;
+    height: 40px;
+    margin-top: 165px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main section .hero .titulo {
+    font-size: 4rem;
+    white-space: nowrap; }
+  main section .hero .subtitulo {
+    font-size: 2rem;
+    margin-top: 30px; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 11px;
+    width: 230px;
+    height: 45px;
+    margin-top: 125px; } }
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  main section .hero .titulo {
+    font-size: 4.5rem;
+    white-space: nowrap; }
+  main section .hero .subtitulo {
+    font-size: 2.25rem; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 12px;
+    width: 250px;
+    height: 50px;
+    margin-top: 140px; } }
+
+@media (min-width: 1501px) {
+  main section .hero .titulo {
+    font-size: 5rem; }
+  main section .hero .subtitulo {
+    font-size: 2.5rem; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 13px;
+    width: 265px;
+    height: 50px;
+    margin-top: 155px; } }
+
+@media (max-width: 767px) {
+  #whatsapp .wtsapp {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    bottom: 50px;
+    right: 30px; } }
+
+@media (max-width: 767px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 16px; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px;
+        height: 250px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 400px;
+      padding-bottom: 16px; } }
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 700px;
+      padding-bottom: 16px; } }
+
+@media (min-width: 1501px) {
+  .servicios-section {
+    height: 100vh; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 40%; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 40%; } }
+
+@media (min-width: 1501px) and (max-width: 1863px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 40%;
+      padding-bottom: 16px; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px; } }
+
+@media (min-width: 1864px) {
+  .servicios-section {
+    height: 100vh; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 40%; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px; } }
+
+@media (min-width: 350px) and (max-width: 1500px) {
+  #discografia-section {
+    height: 160vh; }
+    #discografia-section iframe {
+      width: 90%; } }
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px; } }
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px; } }
+
 .servicios-section {
   height: 100vh;
   background-image: url(../img/servicios2.jpg);
@@ -187,6 +320,67 @@ main section .SolicitarCotizacion {
         font-size: 15px; }
 
 @media (max-width: 767px) {
+  main section .hero .titulo {
+    font-size: 3.2rem; }
+    main section .hero .titulo::after {
+      width: 100px;
+      margin: 25px auto; }
+  main section .hero .subtitulo {
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding-top: 95px; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 10px;
+    width: 200px;
+    height: 40px;
+    margin-top: 165px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main section .hero .titulo {
+    font-size: 4rem;
+    white-space: nowrap; }
+  main section .hero .subtitulo {
+    font-size: 2rem;
+    margin-top: 30px; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 11px;
+    width: 230px;
+    height: 45px;
+    margin-top: 125px; } }
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  main section .hero .titulo {
+    font-size: 4.5rem;
+    white-space: nowrap; }
+  main section .hero .subtitulo {
+    font-size: 2.25rem; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 12px;
+    width: 250px;
+    height: 50px;
+    margin-top: 140px; } }
+
+@media (min-width: 1501px) {
+  main section .hero .titulo {
+    font-size: 5rem; }
+  main section .hero .subtitulo {
+    font-size: 2.5rem; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 13px;
+    width: 265px;
+    height: 50px;
+    margin-top: 155px; } }
+
+@media (max-width: 767px) {
+  #whatsapp .wtsapp {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    bottom: 50px;
+    right: 30px; } }
+
+@media (max-width: 767px) {
   .servicios-section {
     height: 100%; }
     .servicios-section .servicios-container {
@@ -252,7 +446,7 @@ main section .SolicitarCotizacion {
     width: 50%;
     margin-bottom: 30px; } }
 
-@media (max-width: 767px) and (max-width: 574px) {
+@media (max-width: 574px) {
   .footer-col {
     width: 100%;
     margin-bottom: 30px; } }
@@ -285,6 +479,67 @@ main section .SolicitarCotizacion {
     margin-bottom: 20px; }
 
 @media (max-width: 767px) {
+  main section .hero .titulo {
+    font-size: 3.2rem; }
+    main section .hero .titulo::after {
+      width: 100px;
+      margin: 25px auto; }
+  main section .hero .subtitulo {
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding-top: 95px; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 10px;
+    width: 200px;
+    height: 40px;
+    margin-top: 165px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main section .hero .titulo {
+    font-size: 4rem;
+    white-space: nowrap; }
+  main section .hero .subtitulo {
+    font-size: 2rem;
+    margin-top: 30px; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 11px;
+    width: 230px;
+    height: 45px;
+    margin-top: 125px; } }
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  main section .hero .titulo {
+    font-size: 4.5rem;
+    white-space: nowrap; }
+  main section .hero .subtitulo {
+    font-size: 2.25rem; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 12px;
+    width: 250px;
+    height: 50px;
+    margin-top: 140px; } }
+
+@media (min-width: 1501px) {
+  main section .hero .titulo {
+    font-size: 5rem; }
+  main section .hero .subtitulo {
+    font-size: 2.5rem; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 13px;
+    width: 265px;
+    height: 50px;
+    margin-top: 155px; } }
+
+@media (max-width: 767px) {
+  #whatsapp .wtsapp {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    bottom: 50px;
+    right: 30px; } }
+
+@media (max-width: 767px) {
   .servicios-section {
     height: 100%; }
     .servicios-section .servicios-container {
@@ -350,7 +605,7 @@ main section .SolicitarCotizacion {
     width: 50%;
     margin-bottom: 30px; } }
 
-@media (max-width: 767px) and (max-width: 574px) {
+@media (max-width: 574px) {
   .footer-col {
     width: 100%;
     margin-bottom: 30px; } }
@@ -519,3 +774,135 @@ main section .SolicitarCotizacion {
           .footer .contenedor .row .footer-col .socials a:hover {
             color: #24262b;
             background-color: #ffffff; }
+
+@media (max-width: 767px) {
+  main section .hero .titulo {
+    font-size: 3.2rem; }
+    main section .hero .titulo::after {
+      width: 100px;
+      margin: 25px auto; }
+  main section .hero .subtitulo {
+    font-size: 1.6rem;
+    white-space: nowrap;
+    padding-top: 95px; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 10px;
+    width: 200px;
+    height: 40px;
+    margin-top: 165px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  main section .hero .titulo {
+    font-size: 4rem;
+    white-space: nowrap; }
+  main section .hero .subtitulo {
+    font-size: 2rem;
+    margin-top: 30px; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 11px;
+    width: 230px;
+    height: 45px;
+    margin-top: 125px; } }
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  main section .hero .titulo {
+    font-size: 4.5rem;
+    white-space: nowrap; }
+  main section .hero .subtitulo {
+    font-size: 2.25rem; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 12px;
+    width: 250px;
+    height: 50px;
+    margin-top: 140px; } }
+
+@media (min-width: 1501px) {
+  main section .hero .titulo {
+    font-size: 5rem; }
+  main section .hero .subtitulo {
+    font-size: 2.5rem; }
+  main section .hero .SolicitarCotizacion {
+    font-size: 13px;
+    width: 265px;
+    height: 50px;
+    margin-top: 155px; } }
+
+@media (max-width: 767px) {
+  #whatsapp .wtsapp {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    bottom: 50px;
+    right: 30px; } }
+
+@media (max-width: 767px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 16px; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px;
+        height: 250px; } }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 400px;
+      padding-bottom: 16px; } }
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 700px;
+      padding-bottom: 16px; } }
+
+@media (min-width: 1501px) {
+  .servicios-section {
+    height: 100vh; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 40%; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 40%; } }
+
+@media (min-width: 1501px) and (max-width: 1863px) {
+  .servicios-section {
+    height: 100%; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 40%;
+      padding-bottom: 16px; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px; } }
+
+@media (min-width: 1864px) {
+  .servicios-section {
+    height: 100vh; }
+    .servicios-section .servicios-container {
+      justify-content: center;
+      width: 40%; }
+      .servicios-section .servicios-container .servicios-box {
+        width: 250px; } }
+
+@media (min-width: 350px) and (max-width: 1500px) {
+  #discografia-section {
+    height: 160vh; }
+    #discografia-section iframe {
+      width: 90%; } }
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px; } }
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+    margin-bottom: 30px; } }

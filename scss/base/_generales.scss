@@ -31,14 +31,12 @@
 
 .navbar{
     font-family: "Open Sans";
-    margin-right: 10px;
 }
 
 //BOTON WHATSAPP
 
 #whatsapp .wtsapp{
     position: fixed;
-    transform: all 0.2s ease;
     background-color: #25d366;
     display: block;
     text-align:center;
@@ -47,7 +45,7 @@
     border-right: none;
     color: #fff;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 40px;
     bottom: 70px;
     right: 50px;
     border: 0;
@@ -55,4 +53,9 @@
     width: 65px;
     height: 65px;
     line-height: 65px;
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.2);
+    }
 }
+

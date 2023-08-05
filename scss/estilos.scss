@@ -5,6 +5,8 @@
 
 @import "./components/hero";
 
+@import "./base/mediaquery";
+
 //SERVICIOS
 
 @import "./components/servicios";
@@ -28,3 +30,5 @@
 //FOOTER
 
 @import "./components/footer";
+
+@import "./base/mediaquery";
