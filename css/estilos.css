@@ -21,7 +21,8 @@
   font-family: "Open Sans"; }
 
 .navbar {
-  font-family: "Open Sans"; }
+  font-family: "Open Sans";
+  padding-right: 0 !important; }
 
 #whatsapp .wtsapp {
   position: fixed;
@@ -82,58 +83,56 @@ main section .hero {
   100% {
     opacity: 1;
     transform: translate(-50%, -50%); } }
-
-main section .subtitulo {
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  text-align: center;
-  transform: translate(-50%, -50%);
-  font-weight: 400;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  color: white;
-  opacity: 0;
-  animation: fadeIn 3s;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards; }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
-
-main section .SolicitarCotizacion {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: "LuloCleanOne";
-  font-weight: 900;
-  font-size: 13px;
-  height: 50px;
-  width: 265px;
-  background: indianred;
-  color: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  border-radius: 16px;
-  margin-top: 155px;
-  opacity: 0;
-  animation: fadeIn 4s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards; }
+  main section .hero .subtitulo {
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white; }
 
 @keyframes fadeIn {
   from {
     opacity: 0; }
   to {
     opacity: 1; } }
-  main section .SolicitarCotizacion:hover {
-    transition: all 0.8s ease;
-    transform: translate(-50%, -50%) scale(1.1); }
+  main section .hero .SolicitarCotizacion {
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "LuloCleanOne";
+    font-weight: 900;
+    font-size: 13px;
+    height: 50px;
+    width: 265px;
+    background: indianred;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-top: 155px; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+    main section .hero .SolicitarCotizacion:hover {
+      transition: all 0.8s ease;
+      transform: translate(-50%, -50%) scale(1.1); }
 
 @media (max-width: 767px) {
   main section .hero .titulo {
@@ -257,15 +256,13 @@ main section .SolicitarCotizacion {
     #discografia-section iframe {
       width: 90%; } }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .footer-col {
-    width: 50%;
-    margin-bottom: 30px; } }
+    width: 50%; } }
 
-@media (max-width: 574px) {
+@media (max-width: 480px) {
   .footer-col {
-    width: 100%;
-    margin-bottom: 30px; } }
+    width: 100%; } }
 
 .servicios-section {
   height: 100vh;
@@ -287,7 +284,7 @@ main section .SolicitarCotizacion {
     margin-bottom: 40px; }
     .servicios-section .servicios-separador .servicios-separador_div {
       height: 4px;
-      width: 2%;
+      width: 30px;
       background-color: #2A2A2A;
       margin: 0 auto; }
   .servicios-section .servicios-container {
@@ -441,15 +438,13 @@ main section .SolicitarCotizacion {
     #discografia-section iframe {
       width: 90%; } }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .footer-col {
-    width: 50%;
-    margin-bottom: 30px; } }
+    width: 50%; } }
 
-@media (max-width: 574px) {
+@media (max-width: 480px) {
   .footer-col {
-    width: 100%;
-    margin-bottom: 30px; } }
+    width: 100%; } }
 
 #discografia-section {
   background: url(../img/discografia-background.jpg);
@@ -600,22 +595,20 @@ main section .SolicitarCotizacion {
     #discografia-section iframe {
       width: 90%; } }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .footer-col {
-    width: 50%;
-    margin-bottom: 30px; } }
+    width: 50%; } }
 
-@media (max-width: 574px) {
+@media (max-width: 480px) {
   .footer-col {
-    width: 100%;
-    margin-bottom: 30px; } }
+    width: 100%; } }
 
 .gallery {
   background-color: #dbddf1;
   padding-bottom: 50px; }
   .gallery .galeria-titulo {
     padding-top: 100px;
-    color: #2a2a2a;
+    color: #2A2A2A;
     font-family: "Avenir-Heavy";
     font-size: 40px;
     font-weight: 600;
@@ -627,7 +620,7 @@ main section .SolicitarCotizacion {
     margin-bottom: 40px; }
     .gallery .servicios-separador .servicios-separador_div {
       height: 4px;
-      width: 2%;
+      width: 30px;
       background-color: #2A2A2A;
       margin: auto; }
   .gallery .container-lg .row .col img {
@@ -642,72 +635,72 @@ main section .SolicitarCotizacion {
 #contacto-section {
   background: url(../img/contacto-background.jpg);
   background-size: cover;
-  height: 100vh;
-  background-attachment: fixed; }
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
   #contacto-section .contacto-titulo {
-    padding-top: 100px;
+    padding: 100px 0 20px;
     color: #2A2A2A;
     font-family: "Open Sans";
     font-size: 40px;
     font-weight: 600;
-    padding-bottom: 20px;
     text-align: center; }
   #contacto-section .servicios-separador {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-bottom: 40px; }
-    #contacto-section .servicios-separador .servicios-separador_div {
-      height: 4px;
-      width: 2%;
-      background-color: #f3f3f3;
-      margin: auto; }
+  #contacto-section .servicios-separador_div {
+    height: 4px;
+    width: 30px;
+    background-color: #2A2A2A;
+    margin: auto; }
   #contacto-section .contact-form {
     font-family: "Open Sans";
-    width: 85%;
+    width: 90%;
     max-width: 600px;
-    background: #fcfcfcef;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 30px 40px;
-    box-sizing: border-box;
-    border-radius: 10px;
+    background: #fcfcfccb;
+    padding: 25px;
+    border-radius: 8px;
     text-align: center;
-    box-shadow: 0 0 20px #00000063; }
+    box-shadow: 0 0 10px #00000063;
+    margin: 20px auto; }
     #contacto-section .contact-form h1 {
       margin-top: 0;
       padding-bottom: 20px;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 20px;
       text-align: center; }
     #contacto-section .contact-form .txtb {
       border: 1px solid gray;
-      margin: 8px 0;
+      margin: 6px 0;
       padding: 12px 18px;
-      border-radius: 10px; }
-      #contacto-section .contact-form .txtb label {
-        display: block;
-        text-align: left;
-        color: #333;
-        text-transform: uppercase;
-        font-size: 14px; }
-      #contacto-section .contact-form .txtb input,
-      #contacto-section .contact-form .txtb textarea {
-        width: 100%;
-        border: none;
-        background: none;
-        outline: none;
-        font-size: 18px;
-        margin-top: 6px; }
+      border-radius: 8px; }
+    #contacto-section .contact-form label {
+      display: block;
+      text-align: left;
+      color: #333;
+      text-transform: uppercase;
+      font-size: 14px; }
+    #contacto-section .contact-form input,
+    #contacto-section .contact-form textarea {
+      width: 100%;
+      border: none;
+      background: none;
+      outline: none;
+      font-size: 14px;
+      margin-top: 6px; }
     #contacto-section .contact-form .btn {
       display: inline-block;
       background: #d14b2a;
-      padding: 14px 0;
+      padding: 12px 0;
       color: white;
       text-transform: uppercase;
       cursor: pointer;
-      margin-top: 8px;
+      margin-top: 5px;
       width: 100%; }
 
 .footer {
@@ -897,12 +890,10 @@ main section .SolicitarCotizacion {
     #discografia-section iframe {
       width: 90%; } }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .footer-col {
-    width: 50%;
-    margin-bottom: 30px; } }
+    width: 50%; } }
 
-@media (max-width: 574px) {
+@media (max-width: 480px) {
   .footer-col {
-    width: 100%;
-    margin-bottom: 30px; } }
+    width: 100%; } }

@@ -1,60 +1,61 @@
 #contacto-section {
     background: url(../img/contacto-background.jpg);
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
     background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     .contacto-titulo {
-        padding-top: 100px;
-        color: #2A2A2A;
+        padding: 100px 0 20px;
+        color: $titulos-color;
         font-family: "Open Sans";
         font-size: 40px;
         font-weight: 600;
-        padding-bottom: 20px;
         text-align: center;
     }
 
     .servicios-separador {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin-bottom: 40px;
+    }
 
-        .servicios-separador_div {
-            height: 4px;
-            width: 2%;
-            background-color: #f3f3f3;
-            margin: auto;
-        }
+    .servicios-separador_div {
+        height: 4px;
+        width: 30px;
+        background-color: $titulos-color;
+        margin: auto;
     }
 
     .contact-form {
         font-family: "Open Sans";
-        width: 85%;
+        width: 90%;
         max-width: 600px;
-        background: #fcfcfcef;
-        position: absolute;
-        top: 55%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 30px 40px;
-        box-sizing: border-box;
-        border-radius: 10px;
+        background: #fcfcfccb;
+        padding: 25px;
+        border-radius: 8px;
         text-align: center;
-        box-shadow: 0 0 20px #00000063;
+        box-shadow: 0 0 10px #00000063;
+        margin: 20px auto;
 
-        h1 {
-            margin-top: 0;
-            padding-bottom: 20px;
-            font-weight: 500;
-            font-size: 20px;
-            text-align: center;
-        }
+            h1 {
+                margin-top: 0;
+                padding-bottom: 20px;
+                font-weight: 600;
+                font-size: 20px;
+                text-align: center;
+            }
 
-        .txtb {
-            border: 1px solid gray;
-            margin: 8px 0;
-            padding: 12px 18px;
-            border-radius: 10px;
+            .txtb {
+                border: 1px solid gray;
+                margin: 6px 0;
+                padding: 12px 18px;
+                border-radius: 8px;
+            }
 
             label {
                 display: block;
@@ -70,20 +71,20 @@
                 border: none;
                 background: none;
                 outline: none;
-                font-size: 18px;
+                font-size: 14px;
                 margin-top: 6px;
             }
-        }
+        
 
-        .btn {
-            display: inline-block;
-            background: #d14b2a;
-            padding: 14px 0;
-            color: white;
-            text-transform: uppercase;
-            cursor: pointer;
-            margin-top: 8px;
-            width: 100%;
+            .btn {
+                display: inline-block;
+                background: #d14b2a;
+                padding: 12px 0;
+                color: white;
+                text-transform: uppercase;
+                cursor: pointer;
+                margin-top: 5px;
+                width: 100%;
+            }
         }
     }
-}

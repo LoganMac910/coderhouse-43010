@@ -199,16 +199,13 @@
 
 //FOOTER RESPONSIVE
 
-@media(max-width:767px){
-    .footer-col{
-        width:50%;
-        margin-bottom: 30px;
+@media (max-width: 768px) {
+    .footer-col {
+        width: 50%;
     }
 }
 
-@media(max-width:574px){
-    .footer-col{
-        width:100%;
-        margin-bottom: 30px;
-    }
+@media (max-width: 480px) {
+    .footer-col {
+        width: 100%;}
 }

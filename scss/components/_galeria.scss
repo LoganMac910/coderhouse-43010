@@ -4,7 +4,7 @@
 
     .galeria-titulo {
         padding-top: 100px;
-        color: #2a2a2a;
+        color: $titulos-color;
         font-family: "Avenir-Heavy";
         font-size: 40px;
         font-weight: 600;
@@ -19,8 +19,8 @@
 
         .servicios-separador_div {
             height: 4px;
-            width: 2%;
-            background-color: #2A2A2A;
+            width: 30px;
+            background-color: $titulos-color;
             margin: auto;
         }
     }

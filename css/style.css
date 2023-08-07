@@ -498,6 +498,7 @@ img{
     background-size: cover;
     height: 100vh;
     background-attachment: fixed;
+    background-position:center;
 }
 
 .contact-form{

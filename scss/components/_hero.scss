@@ -1,16 +1,31 @@
-main{
+// Mixin de animacion para subtitulo y boton
+@mixin fade-in-animation($animation-delay) {
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: $animation-delay;
+    animation-fill-mode: forwards;
 
-    section{
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
 
-        .hero{
+main {
+    section {
+        .hero {
             background: url(../img/background1.jpg) no-repeat;
-            background-size:cover;
-            height:100vh;
+            background-size: cover;
+            height: 100vh;
             background-attachment: fixed;
             background-position: top;
             background-repeat: no-repeat;
 
-            .titulo{
+            .titulo {
                 position: absolute;
                 top: 40%;
                 left: 50%;
@@ -20,8 +35,9 @@ main{
                 font-weight: 600;
                 text-transform: uppercase;
                 color: white;
-                animation:fadeInRight 2s;
-                &::after{
+                animation: fadeInRight 2s;
+
+                &::after {
                     content: "";
                     display: block;
                     width: 250px;
@@ -32,22 +48,22 @@ main{
                     top: calc(100% + 8px);
                     left: 0;
                     right: 0;
-                    }
                 }
             }
-            @keyframes fadeInRight{
-                0%{
+
+            @keyframes fadeInRight {
+                0% {
                     opacity: 0;
                     transform: translate(-25%, -50%);
                 }
-                100%{
+                100% {
                     opacity: 1;
                     transform: translate(-50%, -50%);
                 }
-        }
+            }
 
-
-            .subtitulo{
+            .subtitulo {
+                @include fade-in-animation(0.5s);
                 position: absolute;
                 top: 55%;
                 left: 50%;
@@ -57,18 +73,10 @@ main{
                 font-size: 2.5rem;
                 text-transform: uppercase;
                 color: white;
-                opacity:0;
-                animation:fadeIn 3s;
-                animation-delay: 0.5s;
-                animation-fill-mode: forwards;
-            }
-                @keyframes fadeIn{
-                    from {opacity: 0; }
-                    to {opacity: 1; }
             }
 
-
-            .SolicitarCotizacion{
+            .SolicitarCotizacion {
+                @include fade-in-animation(1s);
                 position: absolute;
                 top: 50%;
                 left: 50%;
@@ -85,18 +93,12 @@ main{
                 cursor: pointer;
                 border-radius: 16px;
                 margin-top: 155px;
-                opacity:0;
-                animation: fadeIn 4s;
-                animation-delay:1s;
-                animation-fill-mode: forwards;
-                @keyframes fadeIn{
-                    from {opacity: 0; }
-                    to {opacity: 1; }
-                }
-                &:hover{
+
+                &:hover {
                     transition: all 0.8s ease;
                     transform: translate(-50%, -50%) scale(1.1);
                 }
             }
         }
+    }
 }
