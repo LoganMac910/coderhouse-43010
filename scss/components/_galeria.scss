@@ -1,43 +1,58 @@
+// Mixin para los títulos
+@mixin titulo-estilo {
+    padding-top: 100px;
+    color: $titulos-color;
+    font-family: "Avenir-Heavy";
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+// Mixin para el separador
+@mixin separador-estilo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    .servicios-separador_div {
+        height: 4px;
+        width: 30px;
+        background-color: $titulos-color;
+        margin: auto;
+    }
+}
+
+// Mixin para las imágenes
+@mixin imagen-estilo {
+    max-width: 100%;
+    background-color: #ffffff;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
 .gallery {
     background-color: #dbddf1;
     padding-bottom: 50px;
 
     .galeria-titulo {
-        padding-top: 100px;
-        color: $titulos-color;
-        font-family: "Avenir-Heavy";
-        font-size: 40px;
-        font-weight: 600;
-        padding-bottom: 20px;
-        text-align: center;
+        @include titulo-estilo;
     }
 
     .servicios-separador {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 40px;
-
-        .servicios-separador_div {
-            height: 4px;
-            width: 30px;
-            background-color: $titulos-color;
-            margin: auto;
-        }
+        @include separador-estilo;
     }
 
     .container-lg {
         .row {
             .col {
                 img {
-                    max-width: 100%;
-                    background-color: #ffffff;
-                    width: 100%;
-                    cursor: pointer;
-                    transition: 0.3s;
-
-                    &:hover {
-                        transform: scale(1.1);
-                    }
+                    @include imagen-estilo;
                 }
             }
         }

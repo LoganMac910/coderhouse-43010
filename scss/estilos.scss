@@ -5,19 +5,13 @@
 
 @import "./components/hero";
 
-@import "./base/mediaquery";
-
 //SERVICIOS
 
 @import "./components/servicios";
 
-@import "./base/mediaquery";
-
 //DISCOGRAFIA
 
 @import "./components/discografia";
-
-@import "./base/mediaquery";
 
 //GALERIA
 
@@ -30,5 +24,7 @@
 //FOOTER
 
 @import "./components/footer";
+
+//MEDIA QUERIES
 
 @import "./base/mediaquery";

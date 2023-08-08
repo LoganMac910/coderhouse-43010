@@ -134,136 +134,6 @@ main section .hero {
       transition: all 0.8s ease;
       transform: translate(-50%, -50%) scale(1.1); }
 
-@media (max-width: 767px) {
-  main section .hero .titulo {
-    font-size: 3.2rem; }
-    main section .hero .titulo::after {
-      width: 100px;
-      margin: 25px auto; }
-  main section .hero .subtitulo {
-    font-size: 1.6rem;
-    white-space: nowrap;
-    padding-top: 95px; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 10px;
-    width: 200px;
-    height: 40px;
-    margin-top: 165px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  main section .hero .titulo {
-    font-size: 4rem;
-    white-space: nowrap; }
-  main section .hero .subtitulo {
-    font-size: 2rem;
-    margin-top: 30px; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 11px;
-    width: 230px;
-    height: 45px;
-    margin-top: 125px; } }
-
-@media (min-width: 1024px) and (max-width: 1500px) {
-  main section .hero .titulo {
-    font-size: 4.5rem;
-    white-space: nowrap; }
-  main section .hero .subtitulo {
-    font-size: 2.25rem; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 12px;
-    width: 250px;
-    height: 50px;
-    margin-top: 140px; } }
-
-@media (min-width: 1501px) {
-  main section .hero .titulo {
-    font-size: 5rem; }
-  main section .hero .subtitulo {
-    font-size: 2.5rem; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 13px;
-    width: 265px;
-    height: 50px;
-    margin-top: 155px; } }
-
-@media (max-width: 767px) {
-  #whatsapp .wtsapp {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 30px;
-    bottom: 50px;
-    right: 30px; } }
-
-@media (max-width: 767px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 16px; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 250px;
-        height: 250px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 400px;
-      padding-bottom: 16px; } }
-
-@media (min-width: 1024px) and (max-width: 1500px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 700px;
-      padding-bottom: 16px; } }
-
-@media (min-width: 1501px) {
-  .servicios-section {
-    height: 100vh; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 40%; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 40%; } }
-
-@media (min-width: 1501px) and (max-width: 1863px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 40%;
-      padding-bottom: 16px; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 250px; } }
-
-@media (min-width: 1864px) {
-  .servicios-section {
-    height: 100vh; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 40%; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 250px; } }
-
-@media (min-width: 350px) and (max-width: 1500px) {
-  #discografia-section {
-    height: 160vh; }
-    #discografia-section iframe {
-      width: 90%; } }
-
-@media (max-width: 768px) {
-  .footer-col {
-    width: 50%; } }
-
-@media (max-width: 480px) {
-  .footer-col {
-    width: 100%; } }
-
 .servicios-section {
   height: 100vh;
   background-image: url(../img/servicios2.jpg);
@@ -316,136 +186,6 @@ main section .hero {
       .servicios-section .servicios-container .servicios-box p {
         font-size: 15px; }
 
-@media (max-width: 767px) {
-  main section .hero .titulo {
-    font-size: 3.2rem; }
-    main section .hero .titulo::after {
-      width: 100px;
-      margin: 25px auto; }
-  main section .hero .subtitulo {
-    font-size: 1.6rem;
-    white-space: nowrap;
-    padding-top: 95px; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 10px;
-    width: 200px;
-    height: 40px;
-    margin-top: 165px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  main section .hero .titulo {
-    font-size: 4rem;
-    white-space: nowrap; }
-  main section .hero .subtitulo {
-    font-size: 2rem;
-    margin-top: 30px; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 11px;
-    width: 230px;
-    height: 45px;
-    margin-top: 125px; } }
-
-@media (min-width: 1024px) and (max-width: 1500px) {
-  main section .hero .titulo {
-    font-size: 4.5rem;
-    white-space: nowrap; }
-  main section .hero .subtitulo {
-    font-size: 2.25rem; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 12px;
-    width: 250px;
-    height: 50px;
-    margin-top: 140px; } }
-
-@media (min-width: 1501px) {
-  main section .hero .titulo {
-    font-size: 5rem; }
-  main section .hero .subtitulo {
-    font-size: 2.5rem; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 13px;
-    width: 265px;
-    height: 50px;
-    margin-top: 155px; } }
-
-@media (max-width: 767px) {
-  #whatsapp .wtsapp {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 30px;
-    bottom: 50px;
-    right: 30px; } }
-
-@media (max-width: 767px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 16px; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 250px;
-        height: 250px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 400px;
-      padding-bottom: 16px; } }
-
-@media (min-width: 1024px) and (max-width: 1500px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 700px;
-      padding-bottom: 16px; } }
-
-@media (min-width: 1501px) {
-  .servicios-section {
-    height: 100vh; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 40%; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 40%; } }
-
-@media (min-width: 1501px) and (max-width: 1863px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 40%;
-      padding-bottom: 16px; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 250px; } }
-
-@media (min-width: 1864px) {
-  .servicios-section {
-    height: 100vh; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 40%; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 250px; } }
-
-@media (min-width: 350px) and (max-width: 1500px) {
-  #discografia-section {
-    height: 160vh; }
-    #discografia-section iframe {
-      width: 90%; } }
-
-@media (max-width: 768px) {
-  .footer-col {
-    width: 50%; } }
-
-@media (max-width: 480px) {
-  .footer-col {
-    width: 100%; } }
-
 #discografia-section {
   background: url(../img/discografia-background.jpg);
   background-size: cover;
@@ -472,136 +212,6 @@ main section .hero {
     margin: auto;
     display: block;
     margin-bottom: 20px; }
-
-@media (max-width: 767px) {
-  main section .hero .titulo {
-    font-size: 3.2rem; }
-    main section .hero .titulo::after {
-      width: 100px;
-      margin: 25px auto; }
-  main section .hero .subtitulo {
-    font-size: 1.6rem;
-    white-space: nowrap;
-    padding-top: 95px; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 10px;
-    width: 200px;
-    height: 40px;
-    margin-top: 165px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  main section .hero .titulo {
-    font-size: 4rem;
-    white-space: nowrap; }
-  main section .hero .subtitulo {
-    font-size: 2rem;
-    margin-top: 30px; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 11px;
-    width: 230px;
-    height: 45px;
-    margin-top: 125px; } }
-
-@media (min-width: 1024px) and (max-width: 1500px) {
-  main section .hero .titulo {
-    font-size: 4.5rem;
-    white-space: nowrap; }
-  main section .hero .subtitulo {
-    font-size: 2.25rem; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 12px;
-    width: 250px;
-    height: 50px;
-    margin-top: 140px; } }
-
-@media (min-width: 1501px) {
-  main section .hero .titulo {
-    font-size: 5rem; }
-  main section .hero .subtitulo {
-    font-size: 2.5rem; }
-  main section .hero .SolicitarCotizacion {
-    font-size: 13px;
-    width: 265px;
-    height: 50px;
-    margin-top: 155px; } }
-
-@media (max-width: 767px) {
-  #whatsapp .wtsapp {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 30px;
-    bottom: 50px;
-    right: 30px; } }
-
-@media (max-width: 767px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      flex-direction: column;
-      align-items: center;
-      padding-bottom: 16px; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 250px;
-        height: 250px; } }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 400px;
-      padding-bottom: 16px; } }
-
-@media (min-width: 1024px) and (max-width: 1500px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 700px;
-      padding-bottom: 16px; } }
-
-@media (min-width: 1501px) {
-  .servicios-section {
-    height: 100vh; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 40%; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 40%; } }
-
-@media (min-width: 1501px) and (max-width: 1863px) {
-  .servicios-section {
-    height: 100%; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 40%;
-      padding-bottom: 16px; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 250px; } }
-
-@media (min-width: 1864px) {
-  .servicios-section {
-    height: 100vh; }
-    .servicios-section .servicios-container {
-      justify-content: center;
-      width: 40%; }
-      .servicios-section .servicios-container .servicios-box {
-        width: 250px; } }
-
-@media (min-width: 350px) and (max-width: 1500px) {
-  #discografia-section {
-    height: 160vh; }
-    #discografia-section iframe {
-      width: 90%; } }
-
-@media (max-width: 768px) {
-  .footer-col {
-    width: 50%; } }
-
-@media (max-width: 480px) {
-  .footer-col {
-    width: 100%; } }
 
 .gallery {
   background-color: #dbddf1;
@@ -632,6 +242,51 @@ main section .hero {
     .gallery .container-lg .row .col img:hover {
       transform: scale(1.1); }
 
+#contacto-section .contact-form {
+  font-family: "Open Sans";
+  width: 90%;
+  max-width: 600px;
+  background: #fcfcfccb;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 10px #00000063;
+  margin: 20px auto; }
+  #contacto-section .contact-form h1 {
+    margin-top: 0;
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center; }
+  #contacto-section .contact-form .txtb {
+    border: 1px solid gray;
+    margin: 6px 0;
+    padding: 12px 18px;
+    border-radius: 8px; }
+  #contacto-section .contact-form label {
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px; }
+  #contacto-section .contact-form input,
+  #contacto-section .contact-form textarea {
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 14px;
+    margin-top: 6px; }
+  #contacto-section .contact-form .btn {
+    display: inline-block;
+    background: #d14b2a;
+    padding: 12px 0;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100%; }
+
 #contacto-section {
   background: url(../img/contacto-background.jpg);
   background-size: cover;
@@ -653,55 +308,11 @@ main section .hero {
     justify-content: center;
     align-items: center;
     margin-bottom: 40px; }
-  #contacto-section .servicios-separador_div {
-    height: 4px;
-    width: 30px;
-    background-color: #2A2A2A;
-    margin: auto; }
-  #contacto-section .contact-form {
-    font-family: "Open Sans";
-    width: 90%;
-    max-width: 600px;
-    background: #fcfcfccb;
-    padding: 25px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 0 10px #00000063;
-    margin: 20px auto; }
-    #contacto-section .contact-form h1 {
-      margin-top: 0;
-      padding-bottom: 20px;
-      font-weight: 600;
-      font-size: 20px;
-      text-align: center; }
-    #contacto-section .contact-form .txtb {
-      border: 1px solid gray;
-      margin: 6px 0;
-      padding: 12px 18px;
-      border-radius: 8px; }
-    #contacto-section .contact-form label {
-      display: block;
-      text-align: left;
-      color: #333;
-      text-transform: uppercase;
-      font-size: 14px; }
-    #contacto-section .contact-form input,
-    #contacto-section .contact-form textarea {
-      width: 100%;
-      border: none;
-      background: none;
-      outline: none;
-      font-size: 14px;
-      margin-top: 6px; }
-    #contacto-section .contact-form .btn {
-      display: inline-block;
-      background: #d14b2a;
-      padding: 12px 0;
-      color: white;
-      text-transform: uppercase;
-      cursor: pointer;
-      margin-top: 5px;
-      width: 100%; }
+    #contacto-section .servicios-separador .servicios-separador_div {
+      height: 4px;
+      width: 30px;
+      background-color: #2A2A2A;
+      margin: auto; }
 
 .footer {
   background-color: #24262b;
