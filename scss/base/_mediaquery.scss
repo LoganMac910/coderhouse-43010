@@ -1,3 +1,11 @@
+//NAV
+
+@media (max-width: 1250px) {
+    .container{
+        width:100%;
+    }
+}
+
 //HERO RESPONSIVE
 
 @media (max-width: 767px) {
@@ -206,6 +214,10 @@
 }
 
 @media (max-width: 480px) {
+    .socials{
+        width:100px;
+    }
     .footer-col {
         width: 100%;}
+    
 }
