@@ -46,7 +46,7 @@
                                         display:block;
                                         transition: all 0.3s ease;
                                         padding: 0 0 -16px;
-                                        margin: 0 0 0 -32px;        /*nunca supe de donde sale este margin*/
+                                        margin: 0 0 0 -32px;
                                         &:hover{
                                             color: #ffffff;
                                             padding-left:10px;
@@ -67,7 +67,7 @@
                                 border-radius: 50%;
                                 color: #ffffff;
                                 transition: all 0.7s ease;
-                                                                &:hover{
+                                    &:hover{
                                     color: #24262b;
                                     background-color: #ffffff;
                                 }

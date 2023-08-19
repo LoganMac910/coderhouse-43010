@@ -279,7 +279,7 @@ main section .hero {
     margin-top: 6px; }
   #contacto-section .contact-form .btn {
     display: inline-block;
-    background: #d14b2a;
+    background: indianred;
     padding: 12px 0;
     color: white;
     text-transform: uppercase;
@@ -358,8 +358,7 @@ main section .hero {
             display: block;
             transition: all 0.3s ease;
             padding: 0 0 -16px;
-            margin: 0 0 0 -32px;
-            /*nunca supe de donde sale este margin*/ }
+            margin: 0 0 0 -32px; }
             .footer .contenedor .row .footer-col .footer-ul li a:hover {
               color: #ffffff;
               padding-left: 10px;

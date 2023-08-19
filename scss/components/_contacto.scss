@@ -44,7 +44,7 @@
 
     .btn {
         display: inline-block;
-        background: #d14b2a;
+        background: nth($paleta-colores, 1);
         padding: 12px 0;
         color: white;
         text-transform: uppercase;
